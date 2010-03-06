@@ -1,0 +1,20 @@
+<title>My todo task</title>
+<h1>My tasks</h1>
+<%= link_to 'New Task', :controller => "tasks", :action => "new" %>
+<table>
+  <tr>
+    <th>Title</th>    
+    <th>Description</th>
+  </tr>
+
+<% for task in @tasks %>
+  <tr>
+    <td><%=h task.title %></td>
+    <td><%=h task.description %></td>   
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

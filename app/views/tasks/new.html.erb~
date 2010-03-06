@@ -1,0 +1,19 @@
+<title>New Task</title>
+<h1>New post</h1>
+
+<% form_for :task, @task, :url => { :action => "create" }  do |f| %>
+
+  <%= f.error_messages %>
+  
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
