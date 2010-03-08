@@ -1,0 +1,53 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>My todo tasks</title>
+
+<%= stylesheet_link_tag "reset" %>
+<%= stylesheet_link_tag "fonts" %>
+<%= stylesheet_link_tag "table_format" %>
+
+</head>
+
+
+
+
+
+<div id="content">               
+  <table class="table-data" summary="My tasks">
+    <caption> My tasks <%= link_to 'Create a new task', new_task_path %></caption>
+       <colgroup>  
+           <col  style="width:110px;">  
+           <col style="width:200px;">  
+           <col >  
+           <col style="width:80px;">  
+       </colgroup>    
+    <thead>
+      <tr>
+        <th scope="col"  align="center" >ID</th>
+        <th scope="col" align="center" >Title</th>
+        <th scope="col" align="center">Description</th>
+        <th scope="col" align="center">Is_Completed?</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr  >
+        <th colspan="4"><%= show_pagination_task_lists(@tasks, @per_page.to_i, @page.to_i)%></th>                       
+      </tr>
+    </tfoot> 
+                   
+    <% for task in @tasks %>   
+      <tr class="<%=task.id/2.0 - task.id/2 > 0 ? "even" : "" %>">       
+        <td><%=h task.id %></td>
+        <td><%=link_to task.title, task_path(task) %></td>
+        <td><%=h task.description %></td>
+        <td><%=check_box_tag 'status', nil, false, :disabled => true%>
+      </tr>
+    <% end %>
+</table>
+<br />
+
+
+

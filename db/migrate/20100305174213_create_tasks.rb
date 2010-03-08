@@ -1,8 +1,9 @@
 class CreateTasks < ActiveRecord::Migration
   def self.up
-    create_table :tasks do |t|
+    create_table :tasks do |t|      
       t.string :title
       t.string :description
+      t.boolean :is_completed
       
       t.timestamps
     end

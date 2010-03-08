@@ -7,7 +7,7 @@
   <%=h @task.title %>  
 </p>
 <p>
-  <b>Description</b>
+  <b>Descripton</b>
   <%=h @task.description %>
 </p>
 <p><b>Completed</b>

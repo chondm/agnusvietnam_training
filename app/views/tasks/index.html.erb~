@@ -1,20 +1,21 @@
-<title>My todo task</title>
+<title>My todo tasks</title>
 <h1>My tasks</h1>
-<%= link_to 'New Task', :controller => "tasks", :action => "new" %>
+<%= link_to 'Create a new task', new_task_path %>
 <table>
   <tr>
-    <th>Title</th>    
+    <th>Name</th>    
     <th>Description</th>
-  </tr>
-
+    <th>Status</th>
+  </tr>  
 <% for task in @tasks %>
   <tr>
-    <td><%=h task.title %></td>
-    <td><%=h task.description %></td>   
+    <td><%=link_to task.name, task_path(task) %></td>
+    <td><%=h task.description %></td>
+    <td><%=check_box_tag 'status', :disabled => true%>
   </tr>
 <% end %>
 </table>
-
 <br />
+<%= show_pagination_task_lists(@tasks, @per_page.to_i, @page.to_i)%>
 
 

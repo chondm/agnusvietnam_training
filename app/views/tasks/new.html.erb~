@@ -1,7 +1,7 @@
-<title>New Task</title>
-<h1>New post</h1>
+<title>New task</title>
+<h1>New Task</h1>
 
-<% form_for :task, @task, :url => { :action => "create" }  do |f| %>
+<% form_for (@task) do |f| %>
 
   <%= f.error_messages %>
   
@@ -17,3 +17,4 @@
     <%= f.submit "Create" %>
   </p>
 <% end %>
+<%= link_to 'Back', home_path %>
