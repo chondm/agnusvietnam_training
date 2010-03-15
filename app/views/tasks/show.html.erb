@@ -1,17 +1,24 @@
 <title><%=h @task.title%></title>
 <%= link_to 'My tasks', :controller => "home", :action => "index" %> |
-<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Edit', 
+edit_task_path(@task) %> |
 <%= link_to 'Delete', task_path(@task), :confirm => 'Are you sure?', :method => :delete %>
 <p>
   <b>Title</b>
   <%=h @task.title %>  
 </p>
 <p>
+  <b>Order</b>
+  <%=h @task.order_id.nil? ? "Dulieudefault" : Task.find_by_id(@task.order_id, :select =>"title").title%>
+</p>
+<p>
   <b>Description</b>
   <%=h @task.description %>
 </p>
+
 <p><b>Completed</b>
-     <%= check_box_tag 'status', nil, false, :disabled => true %>
+    <%=check_box_tag 'status', nil, @task.is_completed, :disabled => true%>
+
 </p>
 
 

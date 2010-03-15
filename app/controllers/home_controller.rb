@@ -4,9 +4,9 @@ class HomeController < ApplicationController
   def index
     @page = params[:page] || 1
     @per_page = PER_PAGE
-    @tasks = Task.get_task_lists(@page,@per_page)    
+    @tasks = Task.get_task_lists(@page,@per_page)
     respond_to do |format|
-      format.html # index.html.erb      
+      format.html # index.html.erb
     end
   end
 
