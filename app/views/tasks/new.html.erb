@@ -1,5 +1,5 @@
-<title>New task</title>
-<h1>New Task</h1>
+
+<h2>New Task</h2>
 <% form_for (@task) do |f| %>
   <%= f.error_messages %>  
   <p>
@@ -15,7 +15,15 @@
     <%= f.select :order_id, Task.all.collect {|p| [ p.title, p.id ] }, :prompt => "Select..." %>
   </p>
   <p>
-    <%= f.submit "Create" %>
+    <%= f.submit "Create" %> | <%= link_to 'Cancel', tasks_path %>
   </p>
 <% end %>
-<%= link_to 'Back', home_path %>
+
+<%= javascript_include_merged :task %>
+<script type="text/javascript">
+  Event.observe(window, 'load', function(e){
+    $("task_title").focus();    
+  });
+</script>
+
+

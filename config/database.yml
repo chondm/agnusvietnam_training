@@ -32,7 +32,7 @@ test:
   database: agnusvn_test
   username: root
   password: root
-  socket: /var/run/mysql/mysqld.sock
+  socket: /var/run/mysqld/mysqld.sock
 
 production:
   adapter: mysql
@@ -40,4 +40,4 @@ production:
   database: agnusvn_production
   username: root
   password: root
-  socket: /var/run/mysql/mysqld.sock
+  socket: /var/run/mysqld/mysqld.sock

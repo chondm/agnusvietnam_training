@@ -1,7 +1,7 @@
 module TasksHelper
   def show_pagination_task_lists(task_lists, per_page, current_page)
     ret = ""
-    ret << "<form  id=\"paging_form\" method=\"get\"><div>"
+    ret << "<form  id=\"paging_form\" method=\"get\" onsubmit='go_paging_by_input(event)' action='aaa.js'><div>"
     offset = (current_page.to_i - 1)*per_page.to_i 
     number_of_items = task_lists.total_entries
     if number_of_items > 0

@@ -1,6 +1,6 @@
 class Task < ActiveRecord::Base
   validates_presence_of:title,:description 
-  validates_length_of:title, :maximum => 255 
+  validates_length_of:title, :maximum => 100 
   
   #=================================================================================
   #  * Method name: get_task_lists
@@ -30,4 +30,6 @@ class Task < ActiveRecord::Base
     ret = Task.find(:first, :conditions => ["order_id =? and is_completed = ?",id,0])
     return ret
   end
+  
+  
 end

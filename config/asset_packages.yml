@@ -1,0 +1,17 @@
+--- 
+javascripts: 
+- base: 
+  - effects
+  - dragdrop
+  - prototype
+  - controls
+  - application
+- task: 
+  - prototype
+stylesheets: 
+- task: 
+  - table_format
+  - reset
+  - fonts
+
+ 

@@ -1,24 +1,34 @@
-<title>Edit task</title>
+<%= link_to 'Back', tasks_path %>
+
 <h1>Edit this task</h1>
 <% form_for (@task) do |f| %>
   <%= f.error_messages %>
   <p>
     <%= f.label :title %><br />
     <%= f.text_field :title %>
-  </p>  
+  </p> 
+  <p>
     <%= f.label :description %><br />
     <%= f.text_area :description %>
   </p>
   <p>
     <%= label :order, :title, "This task should be handled after task:" %>
     <%= f.select :order_id, Task.all.collect {|p| [ p.title, p.id ] }, :prompt => "Select..." %>
-  </p>
-  <p>
+  </p> 
   <p><%= f.label :Completed %>
     <%= f.check_box :is_completed%>
   </p>
-    <%= f.submit "Save" %> | <%= link_to 'Cancel', @task %>
-  </p>
+    <%= f.submit "Save" %> | <%= link_to 'Cancel', @task %>  
 <% end %>
-<%= link_to 'Back', tasks_path %>
+
+<%= javascript_include_merged :task %>
+<script type="text/javascript">
+  
+
+Event.observe(window, 'load', function(e){
+$("task_title").focus();
+});
+
+
+</script>
 

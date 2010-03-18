@@ -1,5 +1,16 @@
 class TasksController < ApplicationController
-  
+   #No
+  PER_PAGE = 5
+
+  def index
+    @page = params[:page] || 1
+    @per_page = PER_PAGE
+    @tasks = Task.get_task_lists(@page,@per_page)
+    respond_to do |format|
+      format.html # index.html.erb
+    end
+  end
+
   def show
     unless @task = Task.find_by_id(params[:id])
       redirect_to root_path   
@@ -37,7 +48,7 @@ class TasksController < ApplicationController
     else
        flash[:notice] = "Task wasn't successfully deleted. Because orther task should be handled after that is not completed"
     end  
-    redirect_to(home_url)
+    redirect_to(tasks_url)
   end
    # PUT /tasks/1
   def update

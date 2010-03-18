@@ -11,39 +11,9 @@
 
 </head>
 
-<div id="content">               
-  <table class="table-data" summary="My tasks">
-    <caption> My tasks <%= link_to 'Create a new task', new_task_path %><p style="color: green"><%= flash[:notice] %></p></caption>
-       <colgroup>  
-           <col  style="width:110px;">  
-           <col style="width:200px;">  
-           <col >  
-           <col style="width:80px;">  
-       </colgroup>    
-    <thead>
-      <tr>
-        <th scope="col"  align="center" >ID</th>
-        <th scope="col" align="center" >Title</th>
-        <th scope="col" align="center">Description</th>
-        <th scope="col" align="center">Is_Completed?</th>
-      </tr>
-    </thead>
-    <tfoot>
-      <tr>
-        <th colspan="4"><%= show_pagination_task_lists(@tasks, @per_page.to_i, @page.to_i)%></th>                       
-      </tr>
-    </tfoot> 
-                   
-    <% for task in @tasks %>   
-      <tr class="<%=task.id/2.0 - task.id/2 > 0 ? "even" : "" %>">       
-        <td><%=h task.id %></td>
-        <td><%=link_to task.title, task_path(task) %></td>
-        <td><%=h task.description %></td>
-        <td><%=check_box_tag 'status', nil, task.is_completed, :disabled => true%>
-      </tr>
-    <% end %>
-</table>
-<br />
-
-
-
+<body>
+<div id="content">
+ <h1>Welcome my website </h1><%= link_to 'Click here to create a new task', new_task_path %>
+</div>
+</body>
+</html>
