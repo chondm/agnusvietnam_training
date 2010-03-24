@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
    #No
-  PER_PAGE = 5
+  PER_PAGE = 10
 
   def index
     @page = params[:page] || 1
@@ -11,17 +11,19 @@ class TasksController < ApplicationController
     end
   end
 
-  def show
+  def show  
     unless @task = Task.find_by_id(params[:id])
       redirect_to root_path   
     end
   end
    # POST /tasks
   def create
-    @task = Task.new(params[:task])
+    task = params[:task]    
+    @task = Task.new(params[:task]) 
+    puts @task   
       if @task.save
         flash[:notice] = 'Task was successfully created.'
-        redirect_to(@task)
+        redirect_to(tasks_url)
       else
         render :action => "new"
       end
@@ -42,8 +44,8 @@ class TasksController < ApplicationController
 
   def destroy
     @task = Task.find(params[:id])
-    check_order_task = Task.check_task_before_delete(@task.id) 
-    if check_order_task.nil? && @task.destroy  # don't task should be handled after this task 
+    #check_order_task = Task.check_task_before_delete(@task.id) 
+    if  @task.destroy  # don't task should be handled after this task 
       flash[:notice] = "Task was successfully deleted."
     else
        flash[:notice] = "Task wasn't successfully deleted. Because orther task should be handled after that is not completed"
@@ -57,7 +59,7 @@ class TasksController < ApplicationController
         flash[:notice] = 'Task was successfully updated.'
         redirect_to(@task)
       else
-        frender :action => "edit"
+        render :action => "edit"
       end
    
   end
