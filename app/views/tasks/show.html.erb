@@ -1,7 +1,6 @@
 
 <%= link_to 'My tasks', tasks_path %> |
-<%= link_to 'Edit', 
-edit_task_path(@task) %> |
+<%= link_to 'Edit', edit_task_path(@task) %> |
 <%= link_to 'Delete', task_path(@task), :confirm => 'Are you sure?', :method => :delete %>
 
 <p>
@@ -11,7 +10,7 @@ edit_task_path(@task) %> |
 
 <p>
   <b>Order</b>
-  <%=h @task.order_id.nil? ? "Dulieudefault" : Task.find_by_id(@task.order_id, :select =>"title").title%>
+  <%=h @task.order_id.nil? ? "defaultdata" : Task.find_by_id(@task.order_id, :select =>"title").title%>
 </p>
 <p>
   <b>Description</b>
@@ -19,6 +18,6 @@ edit_task_path(@task) %> |
 </p>
 
 <p><b>Completed</b>
-    <%=check_box_tag 'status', nil, @task.is_completed, :disabled => true%>
+<%=check_box_tag 'status', nil, @task.is_completed, :disabled => true%>
 
 </p>

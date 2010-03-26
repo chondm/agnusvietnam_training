@@ -21,6 +21,7 @@ Spec::Runner.configure do |config|
   config.fixture_path = RAILS_ROOT + '/spec/fixtures/'
   
 
+
   # == Fixtures
   #
   # You can declare fixtures for each example_group like this:
@@ -52,4 +53,8 @@ Spec::Runner.configure do |config|
   # == Notes
   #
   # For more information take a look at Spec::Runner::Configuration and Spec::Runner
+end
+
+Webrat.configure do |config|
+  config.mode = :rails
 end

@@ -1,0 +1,3303 @@
+# Logfile created on Thu Mar 25 10:11:10 +0700 2010  [4;36;1mSQL (14.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 10:11:12) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 6ms (View: 1, DB: 21) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 10:11:12) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 1, DB: 2) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:11:12) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:11:12) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:11:12) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:11:12) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:11:12) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:11:12) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:11:12) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:11:12) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:11:12) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:11:12) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:11:12) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:11:12) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 10:11:55) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 10:11:55) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:11:55) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:11:55) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:11:55) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:11:55) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:11:55) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:11:55) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:11:55) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:11:55) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:11:55) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:11:55) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:11:55) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:11:55) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:11:56) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 10:38:14) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 10:38:14) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:38:14) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:38:14) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:38:14) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:38:15) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:38:15) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:38:15) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:38:15) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:38:15) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:38:15) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:38:15) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:38:15) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:38:15) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:38:15) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:38:15) [DELETE]
+  Parameters: {"id"=>"10"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 10:38:33) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 10:38:33) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:38:33) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:38:33) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:38:33) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:38:33) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:38:33) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:38:33) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:38:33) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:38:33) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:38:33) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:38:33) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:38:33) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:38:33) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:38:33) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:38:33) [DELETE]
+  Parameters: {"id"=>"10"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 10:40:47) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 10:40:47) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:40:47) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:40:47) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:40:47) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:40:47) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:40:47) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:40:47) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:40:47) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:40:47) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:40:47) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:40:47) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:40:47) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:40:47) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:40:47) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:40:47) [DELETE]
+  Parameters: {"id"=>"10"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 10:45:23) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 10:45:23) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:45:23) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:45:23) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:45:23) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:45:23) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:45:23) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:45:23) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:45:23) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:45:23) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:45:23) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:45:23) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:45:23) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:45:23) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:45:23) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:45:23) [DELETE]
+  Parameters: {"id"=>"10"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 10:52:17) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 10:52:17) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:52:17) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:52:17) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:52:17) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:52:17) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:52:17) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:52:17) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:52:17) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:52:17) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:52:17) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:52:17) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:52:17) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:52:17) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:52:17) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:52:17) [DELETE]
+  Parameters: {"id"=>"10"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 10:58:31) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 10:58:31) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:58:31) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:58:31) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:58:31) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:58:31) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:58:31) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:58:31) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:58:31) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:58:31) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:58:31) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:58:31) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:58:31) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:58:31) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:58:31) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 10:59:43) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 10:59:43) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:59:43) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 10:59:43) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:59:43) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:59:43) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:59:43) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:59:43) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:59:43) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 10:59:43) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:59:43) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:59:43) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 10:59:43) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:59:43) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:59:43) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 10:59:43) [DELETE]
+  Parameters: {"id"=>"10"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 11:00:51) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 11:00:51) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:00:51) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:00:51) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:00:51) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:00:51) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:00:51) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:00:51) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:00:51) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:00:51) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:00:51) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:00:51) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:00:51) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:00:51) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:00:51) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:00:51) [DELETE]
+  Parameters: {"id"=>"10"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 11:02:17) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 11:02:17) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:02:17) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:02:17) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:02:17) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:02:17) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:02:17) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:02:17) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:02:17) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:02:17) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:02:17) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:02:17) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:02:17) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:02:17) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:02:17) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 11:03:01) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 11:03:01) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:03:01) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:03:01) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:03:01) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:03:01) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:03:01) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:03:01) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:03:01) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:03:01) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:03:01) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:03:01) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:03:01) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:03:01) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:03:01) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 11:04:13) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 11:04:13) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:04:13) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:04:13) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:04:13) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:04:13) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:04:13) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:04:13) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:04:13) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:04:13) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:04:13) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:04:13) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:04:13) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:04:13) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:04:13) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 11:04:21) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 11:04:21) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:04:21) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:04:21) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:04:21) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:04:21) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:04:21) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:04:21) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:04:21) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:04:21) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:04:21) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:04:21) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:04:21) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:04:21) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:04:21) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 11:10:32) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 11:10:32) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:10:32) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:10:32) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:10:32) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:10:32) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:10:32) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:10:32) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:10:32) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:10:32) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:10:32) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:10:32) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:10:32) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:10:32) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:10:32) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:16:02) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 2ms (DB: 2) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:16:02) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:16:02) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:16:02) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:16:02) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:16:02) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:16:02) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:16:02) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:16:02) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:16:02) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1010
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:16:02) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:16:02) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:16:03) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 11:16:03) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 11:16:03) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-25 11:21:13) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-25 11:21:13) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:21:13) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-25 11:21:13) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:21:13) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:21:13) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:21:13) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:21:13) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:21:13) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-25 11:21:13) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:21:13) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:21:13) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-25 11:21:13) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:21:13) [DELETE]
+  Parameters: {"id"=>"10"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-25 11:21:13) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering messages/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (14.6ms)[0m   [0;1mBEGIN[0m
+Rendering messages/show.html.erb
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering messages/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (14.3ms)[0m   [0;1mBEGIN[0m
+Rendering messages/show.html.erb
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering messages/show.html.erb
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering messages/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering task/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering task/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering task/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (12.8ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+ERROR: compiling _run_erb_app47views47tasks47show46html46erb RAISED compile error
+/home/chondm/working/agnusvietnam_training/app/views/tasks/show.html.erb:16: syntax error, unexpected tASSOC, expecting ')'
+  =>"title").title).to_s); @output...
+    ^
+/home/chondm/working/agnusvietnam_training/app/views/tasks/show.html.erb:16: syntax error, unexpected ')', expecting kEND
+  =>"title").title).to_s); @output_buffer.concat "\r\n<...
+                         ^
+Function body:           def _run_erb_app47views47tasks47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\r\n"
+; @output_buffer.concat(( link_to 'My tasks', tasks_path ).to_s); @output_buffer.concat " |\n"
+; @output_buffer.concat(( link_to 'Edit', 
+edit_task_path(@task) ).to_s); @output_buffer.concat " |\n"
+; @output_buffer.concat(( link_to 'Delete', task_path(@task), :confirm => 'Are you sure?', 
+:method => :delete ).to_s); @output_buffer.concat "\n\r\n<p>\r\n<b>Title</b>\r\n  "
+
+
+
+; @output_buffer.concat((h @task.title ).to_s); @output_buffer.concat "  \r\n</p>\n\r\n<p>\r\n  <b>Order</b>\r\n  "
+
+
+
+
+; @output_buffer.concat((h @task.order_id.nil? ? "defaultdata" : Task.find_by_id(@task.order_id, :select 
+  =>"title").title).to_s); @output_buffer.concat "\r\n</p>\r\n<p>\r\n  <b>Description</b>\r\n  "
+
+
+
+; @output_buffer.concat((h @task.description ).to_s); @output_buffer.concat "\r\n</p>\n\n<p><b>Completed</b>\n"
+
+
+
+; @output_buffer.concat((check_box_tag 'status', nil, @task.is_completed, :disabled => true).to_s); @output_buffer.concat "\r\n\r\n</p>\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/chondm/working/agnusvietnam_training/app/views/tasks/show.html.erb:30:in `compile!'
+/opt/rubyee/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/opt/rubyee/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render_without_template_tracking'
+/opt/rubyee/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/test_case.rb:20:in `render'
+/opt/rubyee/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/rubyee/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render_without_mock_proxy'
+/home/chondm/.gem/ruby/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+/opt/rubyee/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/opt/rubyee/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/opt/rubyee/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/rubyee/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/rubyee/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/rubyee/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/rubyee/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/home/chondm/.gem/ruby/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/view_example_group.rb:170:in `__send__'
+/home/chondm/.gem/ruby/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/view_example_group.rb:170:in `render'
+./spec/views/tasks/show.html.erb_spec:7
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/lib/spec/example/example_methods.rb:40:in `instance_eval'
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/lib/spec/example/example_methods.rb:40:in `execute'
+/opt/rubyee/lib/ruby/1.8/timeout.rb:53:in `timeout'
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/lib/spec/example/example_methods.rb:37:in `execute'
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:214:in `run_examples'
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:212:in `each'
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:212:in `run_examples'
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:103:in `run'
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:23:in `run'
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:22:in `each'
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:22:in `run'
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:152:in `run_examples'
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+/home/chondm/.gem/ruby/1.8/gems/rspec-1.3.0/bin/spec:5
+/opt/rubyee/bin/spec:19:in `load'
+/opt/rubyee/bin/spec:19
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/show.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mTask Load (17.1ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (9.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (8.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (14.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/index.html.erb
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/index.html.erb
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/show.html.erb
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/show.html.erb
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/show.html.erb
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/edit.html.erb
+  [4;36;1mTask Load (24.8ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (12.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/edit.html.erb
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/edit.html.erb
+  [4;36;1mTask Load (5.5ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (7.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/edit.html.erb
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/edit.html.erb
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/edit.html.erb
+  [4;35;1mTask Load (0.1ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/edit.html.erb
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/edit.html.erb
+  [4;35;1mTask Load (0.1ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/new.html.erb
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/new.html.erb
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mTask Load (0.1ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/new.html.erb
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mTask Load (0.1ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/new.html.erb
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mTask Load (0.1ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/new.html.erb
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mTask Load (0.1ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/new.html.erb
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mTask Load (0.1ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/new.html.erb
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mTask Load (0.1ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/new.html.erb
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (7.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/new.html.erb
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mTask Load (0.1ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/new.html.erb
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+Rendering tasks/new.html.erb
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/index.html.erb
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/index.html.erb
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (13.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/show.html.erb
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-26 08:38:51) [DELETE]
+  Parameters: {"id"=>"10"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-26 08:38:51) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 2) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-26 08:38:51) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-26 08:38:51) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-26 08:38:51) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 08:38:51) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 08:38:51) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 08:38:51) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 08:38:51) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 08:38:51) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1010
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 08:38:51) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-26 08:38:51) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-26 08:38:51) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-26 08:38:51) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-26 08:38:51) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/index.html.erb
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+Rendering tasks/index.html.erb
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-26 08:52:36) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-26 08:52:36) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-26 08:52:36) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-26 08:52:36) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 08:52:36) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 08:52:36) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 08:52:36) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 08:52:36) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 08:52:36) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 08:52:36) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-26 08:52:36) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-26 08:52:36) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-26 08:52:36) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-26 08:52:36) [DELETE]
+  Parameters: {"id"=>"10"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-26 08:52:36) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-26 09:06:27) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-26 09:06:27) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-26 09:06:27) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-26 09:06:27) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 09:06:27) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 09:06:27) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 09:06:27) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 09:06:27) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 09:06:27) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 09:06:27) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-26 09:06:27) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-26 09:06:27) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-26 09:06:27) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-26 09:06:27) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-26 09:06:27) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-26 09:07:26) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 2ms (DB: 2) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#destroy (for 0.0.0.0 at 2010-03-26 09:07:26) [DELETE]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-26 09:07:26) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-26 09:07:26) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#edit (for 0.0.0.0 at 2010-03-26 09:07:26) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 09:07:26) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 09:07:26) [PUT]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 09:07:26) [PUT]
+  Parameters: {"id"=>"42"}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 09:07:26) [PUT]
+  Parameters: {"id"=>"10", "task"=>{"title"=>"BB"}}
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10?task%5Btitle%5D=BB]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 09:07:26) [PUT]
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/tasks/1010
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#update (for 0.0.0.0 at 2010-03-26 09:07:26) [PUT]
+  Parameters: {"id"=>"42"}
+Redirected to http://test.host/tasks/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/tasks/42]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-26 09:07:26) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Redirected to http://test.host/tasks
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#create (for 0.0.0.0 at 2010-03-26 09:07:26) [POST]
+  Parameters: {"task"=>{"title"=>"A", "description"=>"create database"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks?task%5Bdescription%5D=create+database&task%5Btitle%5D=A]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#show (for 0.0.0.0 at 2010-03-26 09:07:26) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing TasksController#index (for 0.0.0.0 at 2010-03-26 09:07:26) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/tasks]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m

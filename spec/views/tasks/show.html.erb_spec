@@ -1,0 +1,20 @@
+require 'spec_helper'
+
+include TasksHelper
+
+describe "tasks/show.html.erb" do
+  before(:each) do
+
+    @task = stub_model(Task)
+    assigns[:task] = @task
+ 
+  end
+  it "render a task" do
+    render
+  response.should_not have_text(/is_incomplete/)
+  
+  end
+end
+
+
+

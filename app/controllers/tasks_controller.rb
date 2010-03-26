@@ -44,8 +44,8 @@ class TasksController < ApplicationController
 
   def destroy
     @task = Task.find(params[:id])
-    #check_order_task = Task.check_task_before_delete(@task.id) 
-    if  @task.destroy  # don't task should be handled after this task 
+    if @task.destroy 
+        # don't task should be handled after this task 
       flash[:notice] = "Task was successfully deleted."
     else
        flash[:notice] = "Task wasn't successfully deleted. Because orther task should be handled after that is not completed"
