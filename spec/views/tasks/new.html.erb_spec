@@ -1,32 +1,39 @@
 require 'spec_helper'
- 
+class Task; end
+
 describe "/tasks/new.html.erb" do
   include TasksHelper
- 
   before(:each) do
-    assigns[:task] = stub_model(Task,
-      :new_record? => true
-    )
+    assigns[:task] = mock_model(Task).as_new_record.as_null_object
   end
-  
-  it "renders new task form with empty value of task_ids" do
+  it "renders a form to create a task" do
     render
- 
-    response.should have_tag("form[action=?][method=post]", tasks_path) do
-    end
-    
-    response.should_not have_text(/Please choose the parent task/) do
+    response.should have_selector("form",
+                              :method => "post",
+                              :action => tasks_path
+    ) do |form|
+      form.should have_selector("input", :type => "submit")
     end
   end
-  
-  it "renders new task form with not empty value of task_ids" do
-    assigns[:id] = [stub_model(Task)   ]
- 
+
+  it "renders a text field for the message title" do
+    assigns[:task].stub(:title).and_return("A")
     render
- 
-    response.should have_tag("form[action=?][method=post]", tasks_path) do
+    response.should have_selector("form") do |form|
+      form.should have_selector("input",
+        :type => "text",
+        :name => "task[title]"
+      )
     end
- 
-    response.should have_text(/This task should be handled after task/)
+  end
+
+  it "renders a text area for the message text" do
+    assigns[:task].stub(:description).and_return("create database")
+    render
+    response.should have_selector("form") do |form|
+      form.should have_selector("textarea",
+        :name => "task[description]"
+        ) 
+      end
   end
 end  
