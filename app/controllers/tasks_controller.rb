@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
    #No
   PER_PAGE = 10
-
+  uses_tiny_mce
   def index
     @page = params[:page] || 1
     @per_page = PER_PAGE
@@ -18,9 +18,9 @@ class TasksController < ApplicationController
   end
    # POST /tasks
   def create
-    task = params[:task]    
+    
     @task = Task.new(params[:task]) 
-    puts @task   
+    
       if @task.save
         flash[:notice] = 'Task was successfully created.'
         redirect_to(tasks_url)

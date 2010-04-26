@@ -1,6 +1,8 @@
 
 <h2>New Task</h2>
 <% form_for (@task) do |f| %>
+   <% use_tinymce -%>
+
   <%= f.error_messages %>  
   <p>
     <%= f.label :title %><br />
@@ -8,7 +10,7 @@
   </p>
   <p>
     <%= f.label :description %><br />
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :class => "mce-editor" %>
   </p>
   <p>
     <%= label :order, :title, "This task should be handled after task:" %>
